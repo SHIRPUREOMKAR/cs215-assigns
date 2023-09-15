@@ -22,4 +22,8 @@ noise_var = var(res);
 
 fprintf('Predicted eq. of the plane : %s\n', plane);
 fprintf('Predicted noise variance : %.4f\n', noise_var);
+fprintf('Predicted std deviation : %.4f\n', sqrt(noise_var));
+disp('Note that i calculated the error based on the (Least-Squares Regression)');
+
+
 
