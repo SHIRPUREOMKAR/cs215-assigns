@@ -10,16 +10,16 @@ a = Coefficients(1);
 b = Coefficients(2);
 c = Coefficients(3);
 
-predicted_plane = sprintf('z = %.4fx + %.4fy + %.4f', a, b, c);
+plane = sprintf('z = %.4fx + %.4fy + %.4f', a, b, c);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %noise calc
-residuals = Z - (A * Coefficients);
-predicted_noise_variance = var(residuals);
+res = Z - (A * Coefficients);
+noise_var = var(res);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-fprintf('Predicted eq. of the plane : %s\n', predicted_plane);
-fprintf('Predicted noise variance : %.4f\n', predicted_noise_variance);
+fprintf('Predicted eq. of the plane : %s\n', plane);
+fprintf('Predicted noise variance : %.4f\n', noise_var);
 
