@@ -1,9 +1,9 @@
 import subprocess
 from datetime import datetime
 
-current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+current_time = datetime.now().strftime('%H:%M:%S %Y-%m-%d')
 
-commit_message = f"Files added to repo at {current_time}"
+commit_message = f"Commit at {current_time}"
 
 commands = [
     'git add .',
